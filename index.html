@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedBirdPC.co - Expert PC Repair & IT Services</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>North Central Kentucky PC Repair & IT Services | RedBirdPC.co</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Load Inter font from Google Fonts for a modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
         :root {
             --redbird-red: #D0021B;
-            --redbird-dark: #1D1D1D;
+            /* Dark background to match logo */
+            --redbird-dark: #212121; 
             --redbird-light-gray: #C1C1C1;
             --redbird-text-color: #f8f9fa; /* Light text on dark backgrounds */
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif; /* Using the Inter font */
             background-color: var(--redbird-dark);
             color: var(--redbird-text-color);
         }
@@ -41,30 +45,48 @@
             background-color: var(--redbird-red);
             border-color: var(--redbird-red);
             color: var(--redbird-text-color);
+            border-radius: 0.5rem; /* Added rounded corners */
+            transition: all 0.3s ease;
         }
 
         .btn-redbird-red:hover {
             background-color: #B20217; /* Slightly darker red on hover */
             border-color: #B20217;
+            box-shadow: 0 4px 15px rgba(208, 2, 27, 0.4); /* Added shadow on hover */
+            transform: translateY(-2px);
             color: var(--redbird-text-color);
         }
 
         .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1500x500/1D1D1D/C1C1C1?text=PC+Repair+Background') no-repeat center center/cover; /* Placeholder background */
+            /* HIGH-QUALITY FREE IMAGE REPLACEMENT: Dark circuit board, abstract tech theme */
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./assets/hero.jpg') no-repeat center center/cover;
             padding: 100px 0;
             color: var(--redbird-text-color);
+            background-attachment: fixed; 
+            min-height: 400px;
+            display: flex;
+            align-items: center;
         }
 
         .card {
             background-color: var(--redbird-dark);
             border: 1px solid var(--redbird-light-gray);
+            border-radius: 0.75rem; /* Rounded corners for cards */
             color: var(--redbird-text-color);
+            transition: transform 0.2s, box-shadow 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(208, 2, 27, 0.3);
         }
 
         .card-header {
             background-color: var(--redbird-red);
             color: var(--redbird-text-color);
             font-weight: bold;
+            border-top-left-radius: 0.65rem;
+            border-top-right-radius: 0.65rem;
         }
 
         footer {
@@ -83,11 +105,11 @@
 </head>
 <body>
 
-    
-<nav class="navbar navbar-expand-lg bg-redbird-dark navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-redbird-dark navbar-dark py-3">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="redbird_logo.png" alt="RedBird PC Repair Logo" class="me-2">
+                <!-- Logo path specified by the user -->
+                <img src="./assets/logo.png" alt="RedBird PC Repair Logo" class="me-2"> 
                 <span class="fs-4 fw-bold">RedBirdPC.co</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,25 +134,23 @@
         </div>
     </nav>
 
-    
-<section class="hero-section text-center">
+    <section class="hero-section text-center">
         <div class="container">
-            <h1 class="display-3 fw-bold mb-3">Your PC Problems, Solved.</h1>
-            <p class="lead mb-4">Expert PC Repair & IT Solutions for Home and Business.</p>
+            <h1 class="display-3 fw-bold mb-3">Your PC Problems, Solved in North Central KY.</h1>
+            <p class="lead mb-4">Local Expert PC Repair & IT Solutions for Home and Business in the Bluegrass Region.</p>
             <a href="#contact" class="btn btn-lg btn-redbird-red">Get a Free Consultation</a>
         </div>
     </section>
 
-    
-<section id="services" class="py-5 bg-redbird-dark">
+    <section id="services" class="py-5 bg-redbird-dark">
         <div class="container">
             <h2 class="text-center display-5 fw-bold mb-5">Our Services</h2>
             <div class="row text-center g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <i class="bi bi-hdd-fill service-icon"></i> 
-<h3 class="card-title text-redbird-red">Diagnostic & Repair</h3>
+                            <i class="bi bi-hdd-fill service-icon"></i>
+                            <h3 class="card-title text-redbird-red">Diagnostic & Repair</h3>
                             <p class="card-text">Comprehensive diagnostics to pinpoint and fix any hardware or software issue.</p>
                         </div>
                     </div>
@@ -138,8 +158,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <i class="bi bi-bug-fill service-icon"></i> 
-<h3 class="card-title text-redbird-red">Virus & Malware Removal</h3>
+                            <i class="bi bi-bug-fill service-icon"></i>
+                            <h3 class="card-title text-redbird-red">Virus & Malware Removal</h3>
                             <p class="card-text">Thorough cleaning and protection against all types of malicious software.</p>
                         </div>
                     </div>
@@ -147,8 +167,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <i class="bi bi-cpu-fill service-icon"></i> 
-<h3 class="card-title text-redbird-red">Upgrades & Builds</h3>
+                            <i class="bi bi-cpu-fill service-icon"></i>
+                            <h3 class="card-title text-redbird-red">Upgrades & Builds</h3>
                             <p class="card-text">Upgrade your existing PC or get a custom-built machine tailored to your needs.</p>
                         </div>
                     </div>
@@ -156,8 +176,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <i class="bi bi-life-preserver service-icon"></i> 
-<h3 class="card-title text-redbird-red">Data Recovery & Backup</h3>
+                            <i class="bi bi-life-preserver service-icon"></i>
+                            <h3 class="card-title text-redbird-red">Data Recovery & Backup</h3>
                             <p class="card-text">Recover lost files and implement robust backup solutions for peace of mind.</p>
                         </div>
                     </div>
@@ -165,8 +185,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <i class="bi bi-wifi service-icon"></i> 
-<h3 class="card-title text-redbird-red">Network Solutions</h3>
+                            <i class="bi bi-wifi service-icon"></i>
+                            <h3 class="card-title text-redbird-red">Network Solutions</h3>
                             <p class="card-text">Set up secure and efficient home or small business networks.</p>
                         </div>
                     </div>
@@ -174,8 +194,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <i class="bi bi-motherboard-fill service-icon"></i> 
-<h3 class="card-title text-redbird-red">Software Support</h3>
+                            <i class="bi bi-motherboard-fill service-icon"></i>
+                            <h3 class="card-title text-redbird-red">Software Support</h3>
                             <p class="card-text">Assistance with operating systems, applications, and software conflicts.</p>
                         </div>
                     </div>
@@ -184,55 +204,41 @@
         </div>
     </section>
 
-    
-<section id="about" class="py-5 bg-redbird-red text-center">
+    <section id="about" class="py-5 bg-redbird-red text-center">
         <div class="container">
-            <h2 class="display-5 fw-bold mb-4">About RedBirdPC.co</h2>
+            <h2 class="display-5 fw-bold mb-4">Your Local Tech Partner in North Central Kentucky</h2>
             <p class="lead mb-4">
-                At RedBirdPC.co, we're passionate about technology and dedicated to providing top-notch PC repair and IT services.
-                With years of experience, our certified technicians ensure your systems run smoothly and securely.
-                We pride ourselves on transparent pricing, quick turnaround times, and exceptional customer service.
+                RedBirdPC.co is proud to serve the Frankfort, Lexington, Georgetown, and surrounding North Central Kentucky communities. We are committed to providing the highest quality, localized service.
             </p>
             <p>
-                Whether you're a home user experiencing slow performance or a small business needing network support,
-                RedBirdPC.co is your reliable partner. We believe in honest advice and lasting solutions.
+                As a local business, we understand the technology needs of our neighbors. Our certified technicians offer transparent pricing, quick turnaround times, and exceptional customer service right here in the Bluegrass region.
             </p>
         </div>
     </section>
 
-    
-<section id="contact" class="py-5 bg-redbird-dark">
+    <section id="contact" class="py-5 bg-redbird-dark">
         <div class="container">
             <h2 class="text-center display-5 fw-bold mb-5">Get In Touch</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <p class="text-center lead mb-4">Ready for reliable PC repair or IT support? Contact us today for a free consultation!</p>
-                    
-<form action="https://formspree.io/f/xkgqyjla" method="POST">
-                        
+                    <form action="https://formspree.io/f/xkgqyjla" method="POST">
                         <div class="mb-3">
                             <label for="full_name" class="form-label visually-hidden">Name</label>
                             <input type="text" class="form-control" id="full_name" name="name" placeholder="Your Name" required>
                         </div>
-
-                        
                         <div class="mb-3">
                             <label for="email_address" class="form-label visually-hidden">Email address</label>
                             <input type="email" class="form-control" id="email_address" name="email" placeholder="Your Email" required>
                         </div>
-
-                        
                         <div class="mb-3">
                             <label for="phone_number" class="form-label visually-hidden">Phone (Optional)</label>
                             <input type="tel" class="form-control" id="phone_number" name="phone" placeholder="Your Phone (Optional)">
                         </div>
-
-                        
                         <div class="mb-3">
                             <label for="service_message" class="form-label visually-hidden">Message</label>
                             <textarea class="form-control" id="service_message" name="message" rows="5" placeholder="Tell us about your issue or needs..." required></textarea>
                         </div>
-
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-redbird-red btn-lg">Send Message</button>
                         </div>
@@ -240,23 +246,20 @@
                     <div class="text-center mt-4">
                         <p class="mb-1"><strong>Phone:</strong> (123) 456-7890</p>
                         <p class="mb-1"><strong>Email:</strong> <a href="mailto:info@redbirdpc.co" class="text-decoration-none text-redbird-red">info@redbirdpc.co</a></p>
-                        <p><strong>Address:</strong> [Your Business Address Here], [City, State, Zip]</p>
+                        <p><strong>Address:</strong> Serving Frankfort, Lexington, Georgetown, and surrounding areas in NC-KY.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-<footer class="text-center py-4">
+    <footer class="text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; 2023 RedBirdPC.co. All rights reserved.</p>
+            <p class="mb-0">&copy; 2023 RedBirdPC.co. All rights reserved. Servicing North Central Kentucky.</p>
         </div>
     </footer>
 
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
 </html>
